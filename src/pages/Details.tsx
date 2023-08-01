@@ -34,6 +34,7 @@ export const Details: React.FC = () => {
     "  Ocorreu um erro ao carregar a comanda, por favor tente novamente."
   );
   const tableNumber = useParams<{ mesa: string }>().mesa;
+  const cemp = useParams<{ cemp: string }>().cemp;
   const formatCurrency = (value: number) => {
     return value?.toLocaleString("pt-br", {
       style: "currency",
@@ -44,7 +45,7 @@ export const Details: React.FC = () => {
   const handleGetCommand = async () => {
     try {
       const { data } = await axios.get(
-        `${BASE_URL}/RetornarItensComandaBar?cemp=01&mesa=${tableNumber}`,
+        `${BASE_URL}/RetornarItensComandaBar?cemp=${cemp}&mesa=${tableNumber}`,
         {
           headers: {
             Authorization: `Basic ${encodedAuthString}`,

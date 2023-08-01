@@ -5,7 +5,7 @@ export const Router = () => {
   return (
     <Routes>
       <Route path="/" Component={Home} />
-      <Route path="comanda/:mesa" Component={Details} />
+      <Route path="comanda/:cemp/:mesa" Component={Details} />
     </Routes>
   );
 };
