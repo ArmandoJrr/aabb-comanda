@@ -18,9 +18,9 @@ type Comanda = {
   descricao: string;
   totNota: number;
 };
-const BASE_URL = "http://aabb.voceatende.com.br/nsc/xdata/NscService";
+const BASE_URL = "http://ip.nscinterno.com.br:60086/nsc/xdata/NscService";
 const username = "Nsc_";
-const password = "Aabb270213!@#";
+const password = "Sys!@#270";
 
 const authString = `${username}:${password}`;
 
@@ -293,8 +293,10 @@ export const Details: React.FC = () => {
           textAlign: "center",
         }}
       >
-        Copyright {new Date().getFullYear()} Nsc Sistemas Ltda<br />
-        www.nscsistemas.com.br<br />
+        Copyright {new Date().getFullYear()} Nsc Sistemas Ltda
+        <br />
+        www.nscsistemas.com.br
+        <br />
         Suporte Técnico: 99 3221-8282
       </Title>
     </Wrapper>
