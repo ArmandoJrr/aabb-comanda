@@ -18,7 +18,7 @@ type Comanda = {
   descricao: string;
   totNota: number;
 };
-const BASE_URL = "https://aabb.voceatende.com.br/nsc/xdata/NscService";
+const BASE_URL = "http://aabb.voceatende.com.br/nsc/xdata/NscService";
 const username = "Nsc_";
 const password = "Aabb270213!@#";
 
