@@ -18,7 +18,8 @@ type Comanda = {
   descricao: string;
   totNota: number;
 };
-const BASE_URL = "http://ip.nscinterno.com.br:60086/nsc/xdata/NscService";
+
+const BASE_URL = "https://apiaabb.nscinterno.com.br/nsc/xdata/NscService";
 const username = "Nsc_";
 const password = "Sys!@#270";
 
