@@ -282,7 +282,7 @@ export const Details: React.FC = () => {
             {formatCurrency(
               command.reduce((acc, item) => {
                 return acc + item.vlTotal;
-              }, 0) * 1.1
+              }, 0) * 1.08
             )}
           </Label>
         </Row>
